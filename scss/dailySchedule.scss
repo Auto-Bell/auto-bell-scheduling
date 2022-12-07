@@ -6,37 +6,52 @@ $font-dm-sans: 'DM Sans', sans-serif;
 
 body {
   background-color: $primary-bright;
-  width: 100%;
+  width: auto;
 }
 
 .main {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 15px auto;
 
   .sample {
     width: 50%;
     height: auto;
     padding: 15px;
-    margin: 5px;
+    margin: 0 5px;
 
     .sample-heading {
       font-size: 35px;
       font-family: $font-dm-sans;
+      margin-bottom: 15px;
     }
     .card-list {
       width: 100%;
-      height: 100%;
-      box-shadow: 1px 1px 1px 1px;
+      height: auto;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
       position: relative;
-      border-radius: 10px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 18px;
+      font-family: $font-dm-sans;
     }
 
+    .card-sub-list-item {
+      line-height: 30px;
+    }
+
+    .sample-time-holder {
+      position: relative;
+      right: 25px;
+      float: right;
+    }
   }
-  .textArea {
-    width: 50%;
-    height: 230px;
-    background-color: red;
-    margin: 10px;
+  .warning {
+    font-size: 20px;
+    font-family: $font-dm-sans;
+
+    span {
+      font-weight: bold;
+    }
   }
 }
