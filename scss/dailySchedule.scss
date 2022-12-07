@@ -1,4 +1,5 @@
 $primary-bright: #fff;
+
 body {
   background-color: $primary-bright;
   width: 100%;
@@ -6,5 +7,11 @@ body {
 
 .main {
   display: flex;
-  max-width: 100%;
+  width: 90%;
+  margin: 15px auto;
+
+  .sample {
+    width: 50%;
+    height: 230px;
+  }
 }
