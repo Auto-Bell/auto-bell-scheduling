@@ -21,18 +21,18 @@ body {
     margin: 0 5px;
 
     .sample-heading {
-      font-size: 35px;
+      font-size: 30px;
       font-family: $font-dm-sans;
       margin-bottom: 15px;
     }
     .card-list {
-      width: 100%;
+      width: 80%;
       height: auto;
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
       position: relative;
       border-radius: 5px;
       padding: 15px;
-      font-size: 18px;
+      font-size: 16px;
       font-family: $font-dm-sans;
     }
 
@@ -47,11 +47,16 @@ body {
     }
   }
   .warning {
-    font-size: 20px;
+    font-size: 17px;
     font-family: $font-dm-sans;
+    width: 80%;
+    p{
+      letter-spacing: 1px;
+    }
 
     span {
       font-weight: bold;
+      font-size: 16px;
     }
   }
 }
