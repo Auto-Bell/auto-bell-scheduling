@@ -5,6 +5,7 @@ body {
   width: auto;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -34,7 +35,7 @@ nav .nav-right {
 nav .nav-right p {
   font-size: 45px;
   font-family: "DM Sans", sans-serif;
-  color: #022A1F;
+  color: #022a1f;
 }
 nav .nav-right p span {
   font-family: "Flavors", cursive;
@@ -85,4 +86,50 @@ nav .nav-right p span {
 .main .warning span {
   font-weight: bold;
   font-size: 16px;
+}
+
+.textArea {
+  position: relative;
+  left: 200px;
+  height: 500px;
+  width: 50%;
+  padding: 10px;
+  top: 34px;
+  float: right;
+}
+
+.button {
+  float: right;
+  position: relative;
+  left: 0px;
+  top: 500px;
+}
+
+.textArea h3 {
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  margin: 0 0 15px 0;
+  position: relative;
+  left: 250px;
+}
+
+button#save {
+  font-weight: bold;
+  height: 70px;
+  width: 232px !important;
+  transition: all 0.2s ease-in;
+  border: none;
+  float: right;
+  border-radius: 10px;
+  margin: 30px 0 0 0;
+  color: #022a1f;
+  position: relative;
+  left: -30px;
+}
+
+button#save:hover {
+  transform: scale(1.05);
+  background-color: #022a1f;
+  color: #fff;
 }/*# sourceMappingURL=dailySchedule.css.map */
