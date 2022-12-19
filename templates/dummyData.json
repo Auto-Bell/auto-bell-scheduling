@@ -1,0 +1,25 @@
+{
+  "day": "2022-12-18",
+  "data": [
+    {
+      "activity": "wake up",
+      "time": "5:30 AM"
+    },
+    {
+      "activity": "First prep",
+      "time": "6:00 AM"
+    },
+    {
+      "activity": "Breakfast",
+      "time": "6:30 AM"
+    },
+    {
+      "activity": "Second prep",
+      "time": "5:30 PM"
+    },
+    {
+      "activity": "Third prep",
+      "time": "8:00 PM"
+    }
+  ]
+}

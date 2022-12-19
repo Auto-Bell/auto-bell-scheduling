@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/style/dailySchedule.css ">
     <title>Make a daily schedule</title>
-    <script
-      src="https://cdn.tiny.cloud/1/i3bfp7p2fdzdrnrua0zyl968x36bdfmf4jjv0p8u4rx8s15h/tinymce/6/tinymce.min.js"
-      referrerpolicy="origin"
-    ></script>
-    <script src="./../modules/getInput.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script language="javascript" type="text/javascript">
+  tinyMCE.init({
+    theme : "advanced",
+    mode: "exact",
+    elements : "elm1",
+    theme_advanced_toolbar_location : "top",
+    theme_advanced_buttons1 : "bold,italic,underline,strikethrough,separator,"
+    + "justifyleft,justifycenter,justifyright,justifyfull,formatselect,"
+    + "bullist,numlist,outdent,indent",
+    theme_advanced_buttons2 : "link,unlink,anchor,image,separator,"
+    +"undo,redo,cleanup,code,separator,sub,sup,charmap",
+    theme_advanced_buttons3 : "",
+    height:"350px",
+    width:"600px"
+});
+
+</script>
   </head>
   <title>Make a daily schedule</title>
   <body>
@@ -51,27 +64,20 @@
         </div>
       </div>
 
-      <div class="textArea" id="textArea">
-        <h3>your schedule</h3>
-        <textarea id="userInput"></textarea>
-        <script>
-          tinymce.init({
-            selector: "textarea",
-            plugins:
-              "anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect",
-            toolbar:
-              "undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat",
-            tinycomments_mode: "embedded",
-            tinycomments_author: "Author name",
-            mergetags_list: [
-              { value: "First.Name", title: "First Name" },
-              { value: "Email", title: "Email" },
-            ],
-          });
-        </script>
-      </div>
+    <?php echo $sHeader;?>
+ <h2>Sample using TinyMCE and PHP</h2>
+ <form method="post" action="<?=$_SERVER['REQUEST_URI']?>">
+  <textarea id="elm1" name="elm1" rows="15" cols="80"><?php echo $sContent;?></textarea>
+<br />
+<input type="submit" name="save" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+</form>
+     
       <div class="button">
-        <button id="save" name="save" onclick="getUserInput()">SAVE TIME</button>
+        <?php
+          include ("./../modules/getInput.php");
+        ?>
+        <button id="save" name="save" onclick="writeDataToFile()">SAVE TIME</button>
       </div>
     </div>
   </body>
