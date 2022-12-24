@@ -52,7 +52,8 @@
 
       <div class="textArea" id="textArea">
         <h3>your schedule</h3>
-        <textarea id="userInput"></textarea>
+        <form action="./../modules/getInput.php" method="POST">
+        <textarea id="userInput" name="userInput"></textarea>
         <script>
           tinymce.init({
             selector: "textarea",
@@ -70,8 +71,12 @@
         </script>
       </div>
       <div class="button">
-        <button id="save" name="save">SAVE TIME</button>
+        <?php
+        include "./../modules/getInput.php";
+        ?>
+       <input type="submit" value="SAVE TIME" id="save"/>
       </div>
+    </form>
     </div>
   </body>
 </html>
