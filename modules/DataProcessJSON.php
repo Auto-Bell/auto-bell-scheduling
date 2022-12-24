@@ -12,39 +12,48 @@ class DataProcessJSON{
         return gmdate($dateFormat, time()+$offsetToSeconds);
     } 
     
-    public function writeWeatherDataToFileInJSONFormat($activity, $time){
-        #check if the file exists and if not create a new one
-        if(!is_file($this->FILENAME)){
-            file_put_contents($this->FILENAME, null);
+    public function writeWeatherDataToFileInJSONFormat(){
+        if(isset($_POST['userInput'])){
+            $userInput = $_POST['userInput'];
+            $inputPerLine = explode("\n", $userInput);
+            $clearInput = array(); //Array to be filled with clear elements
+        
+            //Remove first and last elements which ol or ul tags
+            array_pop($inputPerLine);
+            array_shift($inputPerLine);
+
+            //Remove the li tags
+            foreach ($inputPerLine as $input){
+                $input = str_replace("<li>", "", $input);
+                $input = str_replace("</li>", "", $input);
+                
+                //Add clear input to the clearInput array - Clear input means input without the html tags
+                array_push($clearInput, $input);
+
+                //Remove nbsp
+                if ($clearInput[count($clearInput)-1] == "&nbsp;") {
+                    array_pop($clearInput);
+                }
+                if(strpos($clearInput[count($clearInput)-1], "&nbsp;")!==false){
+                    $clearInput[count($clearInput)-1] = str_replace("&nbsp;", "", $clearInput[count($clearInput)-1]);
+                }
+            }
+            
+
+            //Extract clear input (activity and time)
+            $jsonFormat = "";
+            foreach($clearInput as $item) {
+                $item = trim($item);
+                $activity = explode(" - ", $item)[0];
+                $time = explode(" - ", $item)[1];
+                $jsonFormat .= "{\"activity\":\"$activity\", \"time\":\"$time\"},";
+            }
+            
+            //Write the JSON-format schedule into file
+            $f = fopen($this->FILENAME, "w");
+            fwrite($f, "{\"day\":\"".$this->getTimestamp(2)."\", \"data\":[".$jsonFormat."]}");
+            fclose($f);
         }
-        
-        #load the existing content into server memory in the variable $existing_data
-        $existing_data = file_get_contents($this->FILENAME);
-        
-        // #remove {\"data\":[ and ]} from the existing content
-        // $existing_data = str_replace("{\"data\":[","", $existing_data);
-        // $existing_data = str_replace("]}","",$existing_data);
-    
-        #capture new data and manually write it in JSON Format
-        $new_data = "{\"day\": \""
-                    .$this->getTimestamp(2) # In Rwanda the offset is 2 hours
-                    ."\", {\"data\":[\". \"activity\": \""
-                    .$activity
-                    ."\", \"time\": \""
-                    .$time."\"}";
-        
-        #append new data at the end of existing data and store the whole in the variable $semi_final_data
-        $semi_final_data = $existing_data.$new_data;
-        
-        #wrap {\"data\":[ and ]} around the whole data to complete JSON
-        // $final_data = "{\"data\":[".$semi_final_data."]}";
-        
-        #Add comma except at the far end
-        $final_data = str_replace("}{","},{",$semi_final_data);
-        $final_data = str_replace("}\n{","},\n{",$semi_final_data);
-        
-        #overwrite the existing content
-        file_put_contents($this->FILENAME, $final_data);      
     }
 }
 ?>
