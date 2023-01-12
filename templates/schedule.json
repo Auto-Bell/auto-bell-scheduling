@@ -1,12 +1,1 @@
-{
-  "day": "2022-12-24 09:29:11",
-  "data": [
-    { "activity": "Wake up", "time": "5:30 AM" },
-    { "activity": "Prepare breakfast", "time": "6:00 AM" },
-    { "activity": "Prepare children", "time": "6:30 AM" },
-    { "activity": "Taking the kids to the school bus", "time": "7:00 AM" },
-    { "activity": "Cooking lunch", "time": "10:00" },
-    { "activity": "Getting kids from school", "time": "12:30 AM" },
-    { "activity": "Preparing supper", "time": "17:30 AM" }
-  ]
-}
+{"day":"2023-01-12 21:01:18", "data":[]}
