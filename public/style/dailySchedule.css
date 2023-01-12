@@ -87,34 +87,30 @@ nav .nav-right p span {
   font-weight: bold;
   font-size: 16px;
 }
-
-.textArea {
+.main .textArea {
   position: relative;
-  left: 200px;
   height: 500px;
   width: 50%;
   padding: 10px;
   top: 34px;
-  float: right;
+  left: 200px;
 }
-
-.button {
-  float: right;
-  position: relative;
-  left: 0px;
-  top: 500px;
-}
-
-.textArea h3 {
+.main .textArea h3 {
   text-transform: capitalize;
   font-family: "DM Sans", sans-serif;
   font-size: 30px;
   margin: 0 0 15px 0;
   position: relative;
-  left: 250px;
 }
 
-button#save {
+.button {
+  float: right;
+  position: relative;
+  right: 9px;
+  top: 500px;
+}
+
+input[type=submit] {
   font-weight: bold;
   height: 70px;
   width: 232px !important;
@@ -128,7 +124,7 @@ button#save {
   left: -30px;
 }
 
-button#save:hover {
+input[type=submit]:hover {
   transform: scale(1.05);
   background-color: #022a1f;
   color: #fff;
