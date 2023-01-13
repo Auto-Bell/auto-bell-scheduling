@@ -1,0 +1,21 @@
+
+// {
+//   "schedule" : [
+//     {
+//       "day": "Monday",
+//       "data": [
+//         {"activity": "", "time": ""},
+//         {"activity": "", "time": ""},
+//         {"activity": "", "time": ""}
+//       ]
+//     },
+//     {
+//       "day": "Tuesday",
+//       "data": [
+//         {"activity": "", "time": ""},
+//         {"activity": "", "time": ""},
+//         {"activity": "", "time": ""}
+//       ]
+//     }
+//   ]
+// }
