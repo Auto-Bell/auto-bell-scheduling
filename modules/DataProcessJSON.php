@@ -12,7 +12,7 @@ class DataProcessJSON{
         return gmdate($dateFormat, time()+$offsetToSeconds);
     } 
     
-    public function writeWeatherDataToFileInJSONFormat(){
+    public function writeDailyScheduleToFileInJSONFormat(){
         if(isset($_POST['userInput'])){
             $userInput = $_POST['userInput'];
             $inputPerLine = explode("\n", $userInput);
