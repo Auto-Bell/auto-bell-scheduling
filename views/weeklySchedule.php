@@ -29,13 +29,83 @@
         <div class="card-list">
           <div class="card-sub-list">
             <ol class="card-sub-list-holder">
-              <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
-              <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
-              <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
-              <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
-              <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
-              <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
-              <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+              <li class="card-sub-list-item">Monday:
+                <ul>
+                <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Tuesday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Wednesday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Thursday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Friday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Saturday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
+              <li class="card-sub-list-item">Sunday:
+                <ul>
+                  <li class="card-sub-list-item">Cleaning the house <span class="sample-time-holder">5:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Breakfast<span class="sample-time-holder">6:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing Children<span class="sample-time-holder">7:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking the to the school bus<span class="sample-time-holder">8:30 AM</span></li>
+                  <li class="card-sub-list-item">Cooking Lunch<span class="sample-time-holder">9:30 AM</span></li>
+                  <li class="card-sub-list-item">Taking a nap<span class="sample-time-holder">10:30 AM</span></li>
+                  <li class="card-sub-list-item">Preparing super<span class="sample-time-holder">17:30 PM</span></li>
+                </ul>
+              </li>
             </ol>
           </div>
         </div>
