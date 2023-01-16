@@ -18,8 +18,7 @@
         echo "File opened";
         foreach($data_exploded as $item) {
             $counter = $counter + 1;
-            $counter_tasks =  0;
-
+            $counter_tasks = 0;
             $item = trim($item);
             list($day,$tasks) = explode(":",$item);
 
@@ -34,35 +33,31 @@
             $jsonFormat.= "\r\t\t{\r\t\t\t\"day\":\"$day_replaced\",\r";
             $tasks = explode("\n",$tasks);
             $jsonFormat.="\t\t\t\"data\":[\r";
-            // echo "\nThe size is".sizeof($tasks). "<br><br>";
+
+            
             foreach($tasks as $task) {
-                // print_r($tasks);
                 $counter_tasks = $counter_tasks + 1;
                 $task = trim($task);
                 list($activity, $time) = explode("--",$task);
                 $activity = str_replace("<li>", "", $activity);
                 $time = str_replace("</li>","",$time);
-                if(empty($task)) {
-                    unset($task);
-                }
-                if($activity == '' && $time == '') {
-                    unset($activity);
-                    unset($time);
-                }
-                else if($activity == "<ul>" || $activity == "<li>" || $activity == "<ol>"
-                || $activity == "</ul>" || $activity == "</li>" || $activity == "</ol>") {
-                    unset($activity);
-                    unset($time);
-                }
-
-                $activity_replaced = trim($activity);
-                $time_replaced = trim($time);
-                if($counter_tasks == sizeof($tasks)) {
-                    $jsonFormat.="\t\t\t\t{\"activity\":\"$activity_replaced\",\"time\":\"$time_replaced\"}\r";
-                }
-                
-                else {
-                    $jsonFormat.="\t\t\t\t{\"activity\":\"$activity_replaced\",\"time\":\"$time_replaced\"},\r";
+                if(!empty($task)) {
+                    if($activity == "<ul>" || $activity == "<li>" || $activity == "<ol>"
+                    || $activity == "</ul>" || $activity == "</li>" || $activity == "</ol>") {
+                        unset($activity);
+                        unset($time);
+                    }
+                    if(!empty($activity) && !empty($time)) {
+                        $activity_replaced = trim($activity);
+                        $time_replaced = trim($time);
+                        if($counter_tasks == sizeof($tasks)) {
+                            $jsonFormat.="\t\t\t\t{\"activity\":\"$activity_replaced\",\"time\":\"$time_replaced\"}\r";
+                        }
+                    
+                        else {
+                            $jsonFormat.="\t\t\t\t{\"activity\":\"$activity_replaced\",\"time\":\"$time_replaced\"},\r";
+                        }
+                    }
                 }
             }
 

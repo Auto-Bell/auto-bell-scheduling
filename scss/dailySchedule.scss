@@ -58,10 +58,11 @@ nav {
   display: flex;
   width: 90%;
   margin: 5px auto;
+  height: fit-content;
 
   .sample {
     width: 50%;
-    height: auto;
+    height: 500px;
     padding: 15px;
     margin: 0 5px;
 
@@ -72,13 +73,14 @@ nav {
     }
     .card-list {
       width: 80%;
-      height: auto;
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+      height: 50%;
+      box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
       position: relative;
       border-radius: 5px;
       padding: 15px;
       font-size: 16px;
-      font-family: $font-dm-sans;
+      font-family: "DM Sans", sans-serif;
+      overflow: scroll;
     }
 
     .card-sub-list-item {
