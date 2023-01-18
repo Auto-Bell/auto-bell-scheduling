@@ -1,1 +1,8 @@
-{"day":"2023-01-12 21:01:18", "data":[]}
+{
+	"day":"2023-01-17 21:22:48", 
+	"data":[		
+		{"activity":"Prep", "time":"21:25"},
+		{"activity":"Prepp", "time":"21:30"},
+		{"activity":"Preppp", "time":"21:55"}
+	]
+}

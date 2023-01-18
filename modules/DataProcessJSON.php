@@ -37,21 +37,34 @@ class DataProcessJSON{
                 if(strpos($clearInput[count($clearInput)-1], "&nbsp;")!==false){
                     $clearInput[count($clearInput)-1] = str_replace("&nbsp;", "", $clearInput[count($clearInput)-1]);
                 }
+          
             }
             
 
             //Extract clear input (activity and time)
             $jsonFormat = "";
+            $counter=0;
+            
             foreach($clearInput as $item) {
+
+                $counter = $counter+1;
                 $item = trim($item);
                 $activity = explode(" - ", $item)[0];
                 $time = explode(" - ", $item)[1];
-                $jsonFormat .= "{\"activity\":\"$activity\", \"time\":\"$time\"},";
+
+                if($counter<sizeof($clearInput)){
+                    $jsonFormat .= "\n\t\t{\"activity\":\"$activity\", \"time\":\"$time\"},";
+                }
+                else{
+                    $jsonFormat .= "\n\t\t{\"activity\":\"$activity\", \"time\":\"$time\"}";
+                }
+                
             }
+            print_r($jsonFormat);
             
             //Write the JSON-format schedule into file
             $f = fopen($this->FILENAME, "w");
-            fwrite($f, "{\"day\":\"".$this->getTimestamp(2)."\", \"data\":[".$jsonFormat."]}");
+            fwrite($f, "{\n\t\"day\":\"".$this->getTimestamp(2)."\", \n\t\"data\":[\t\t".$jsonFormat."\n\t]\n}");
             fclose($f);
         }
     }
