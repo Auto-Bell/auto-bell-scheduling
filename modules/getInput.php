@@ -1,5 +1,5 @@
 <?php
   include_once "DataProcessJSON.php";
   $dataProcess = new DataProcessJSON();
-  $dataProcess->writeWeatherDataToFileInJSONFormat();
+  $dataProcess->writeDailyScheduleToFileInJSONFormat();
 ?>

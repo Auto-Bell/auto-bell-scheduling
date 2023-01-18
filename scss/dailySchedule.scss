@@ -106,7 +106,6 @@ nav {
       font-size: 16px;
     }
   }
-}
 
 .textArea {
   position: relative;
@@ -121,17 +120,8 @@ nav {
 .button {
   float: right;
   position: relative;
-  left: 0px;
+  right: 9px;
   top: 500px;
-}
-
-.textArea h3 {
-  text-transform: capitalize;
-  font-family: $font-dm-sans;
-  font-size: 30px;
-  margin: 0 0 15px 0;
-  position: relative;
-  left: 250px;
 }
 
 input[type="submit"] {
@@ -152,4 +142,5 @@ input[type="submit"]:hover {
   transform: scale(1.05);
   background-color: $main-color;
   color: $primary-bright;
+}
 }
