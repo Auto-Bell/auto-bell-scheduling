@@ -28,6 +28,7 @@
             $day = str_replace("</li>","",$day);
             $day = str_replace("</ul>","",$day);
             $day = str_replace("<ul>","",$day);
+            $day = str_replace("&nbsp;","",$day);
             $day_replaced = trim($day);
 
             $jsonFormat.= "\r\t\t{\r\t\t\t\"day\":\"$day_replaced\",\r";
@@ -69,9 +70,9 @@
             }
         }
 
-        $jsonStringFormat = json_encode($jsonFormat, JSON_PRETTY_PRINT);
 
         fwrite($f,"{\r\t\"schedule\":[".$jsonFormat."\r\t]\r}");
+
         echo "<br><br>Successfully written in file";
         fclose($f);
     }

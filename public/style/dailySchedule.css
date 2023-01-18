@@ -62,7 +62,7 @@ nav .nav-right p span {
 }
 .main .sample .card-list {
   width: 80%;
-  height: 50%;
+  height: 368px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
   position: relative;
   border-radius: 5px;
@@ -95,7 +95,7 @@ nav .nav-right p span {
 .textArea {
   position: relative;
   left: 200px;
-  height: 500px;
+  height: 368px;
   width: 50%;
   padding: 10px;
   top: 34px;
