@@ -93,20 +93,41 @@ nav .nav-right p span {
 }
 .main .textArea {
   position: relative;
+<<<<<<< HEAD
   left: 200px;
   height: 368px;
+=======
+  height: 500px;
+>>>>>>> 7ed23a4 (style adjustment on daily schedule page)
   width: 50%;
   padding: 10px;
   top: 34px;
-  float: right;
+  left: 200px;
 }
+<<<<<<< HEAD
 .main .button {
+=======
+.main .textArea h3 {
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.button {
+>>>>>>> 7ed23a4 (style adjustment on daily schedule page)
   float: right;
   position: relative;
   right: 9px;
   top: 500px;
 }
+<<<<<<< HEAD
 .main input[type=submit] {
+=======
+
+input[type=submit] {
+>>>>>>> 7ed23a4 (style adjustment on daily schedule page)
   font-weight: bold;
   height: 70px;
   width: 232px !important;
@@ -119,7 +140,12 @@ nav .nav-right p span {
   position: relative;
   left: -30px;
 }
+<<<<<<< HEAD
 .main input[type=submit]:hover {
+=======
+
+input[type=submit]:hover {
+>>>>>>> 7ed23a4 (style adjustment on daily schedule page)
   transform: scale(1.05);
   background-color: #022a1f;
   color: #fff;
