@@ -45,8 +45,6 @@ nav .nav-right p span {
   display: flex;
   width: 90%;
   margin: 5px auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .main .sample {
@@ -98,7 +96,7 @@ nav .nav-right p span {
   width: 50%;
   padding: 10px;
   top: 34px;
-  left: 200px;
+  float: right;
 }
 .main .button {
   float: right;
