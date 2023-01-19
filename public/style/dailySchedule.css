@@ -98,7 +98,7 @@ nav .nav-right p span {
   width: 50%;
   padding: 10px;
   top: 34px;
-  float: right;
+  left: 200px;
 }
 .main .button {
   float: right;
