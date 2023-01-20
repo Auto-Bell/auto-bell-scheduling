@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/style/dailySchedule.css ">
+    <link rel="stylesheet" href="../public/style/schedule.css ">
     <title>Make a weekly schedule</title>
     <script
       src="https://cdn.tiny.cloud/1/i3bfp7p2fdzdrnrua0zyl968x36bdfmf4jjv0p8u4rx8s15h/tinymce/6/tinymce.min.js"

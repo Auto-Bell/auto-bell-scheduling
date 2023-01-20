@@ -45,6 +45,8 @@ nav .nav-right p span {
   display: flex;
   width: 90%;
   margin: 5px auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .main .sample {
@@ -121,4 +123,4 @@ nav .nav-right p span {
   transform: scale(1.05);
   background-color: #022a1f;
   color: #fff;
-}/*# sourceMappingURL=dailySchedule.css.map */
+}/*# sourceMappingURL=schedule.css.map */
