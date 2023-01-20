@@ -45,6 +45,8 @@ nav .nav-right p span {
   display: flex;
   width: 90%;
   margin: 5px auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .main .sample {

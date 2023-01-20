@@ -100,4 +100,97 @@
 }
 .container .sidebar .lower-div .row .FAQ {
   text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body .navbar {
+  width: 85%;
+  height: 90px;
+  position: absolute;
+  left: 15%;
+  display: inline-flex;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 72px rgba(2, 42, 31, 0.15);
+}
+body .navbar .nav--container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+body .navbar .nav--container .nav--container--input {
+  align-items: center;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+body .navbar .nav--container .nav--container--input .search--box {
+  border: 1px solid #CCCCCC;
+  position: absolute;
+  height: 1.5rem;
+  width: auto;
+  padding: 5px;
+  border-radius: 5px;
+  color: #CCCCCC;
+  margin-top: 10px;
+}
+body .navbar .nav--container .nav--container--input .search--box input {
+  border: none;
+  color: #CCCCCC;
+  font-size: 16px;
+}
+body .navbar .nav--container .nav--container--input .search--box input:focus {
+  outline: none;
+  color: #022A1F;
+}
+body .navbar .nav--container .nav--container--right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  position: relative;
+  right: 0;
+  left: 24rem;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--icons {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: relative;
+  font-size: 35px;
+  color: #022A1F;
+  margin-top: 7px;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--icons .icons {
+  margin-left: 35px;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona {
+  flex: 0 0 60%;
+  max-width: 60%;
+  color: #022A1F;
+  display: flex;
+  margin: auto 0;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona img {
+  height: 55px;
+  width: 55px;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona .description {
+  margin: 5px 12px;
+  padding: 0;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona .description h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona .description p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+body .navbar .nav--container .nav--container--right .nav--container--right--persona .description--icon {
+  margin: 15px 10px;
+  font-size: 24px;
 }/*# sourceMappingURL=dashboard.css.map */
