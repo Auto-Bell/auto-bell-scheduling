@@ -73,7 +73,7 @@ nav {
     }
     .card-list {
       width: 80%;
-      height: 500px;
+      height: 368px;
       box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
       position: relative;
       border-radius: 5px;
@@ -107,40 +107,40 @@ nav {
     }
   }
 
-.textArea {
-  position: relative;
-  left: 200px;
-  height: 368px;
-  width: 50%;
-  padding: 10px;
-  top: 34px;
-  float: right;
-}
+  .textArea {
+    position: relative;
+    left: 200px;
+    height: 368px;
+    width: 50%;
+    padding: 10px;
+    top: 34px;
+    float: right;
+  }
 
-.button {
-  float: right;
-  position: relative;
-  right: 9px;
-  top: 500px;
-}
+  .button {
+    float: right;
+    position: relative;
+    right: 9px;
+    top: 500px;
+  }
 
-input[type="submit"] {
-  font-weight: bold;
-  height: 70px;
-  width: 232px !important;
-  transition: all 0.2s ease-in;
-  border: none;
-  float: right;
-  border-radius: 10px;
-  margin: 30px 0 0 0;
-  color: $main-color;
-  position: relative;
-  left: -30px;
-}
+  input[type="submit"] {
+    font-weight: bold;
+    height: 70px;
+    width: 232px !important;
+    transition: all 0.2s ease-in;
+    border: none;
+    float: right;
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+    color: $main-color;
+    position: relative;
+    left: -30px;
+  }
 
-input[type="submit"]:hover {
-  transform: scale(1.05);
-  background-color: $main-color;
-  color: $primary-bright;
-}
+  input[type="submit"]:hover {
+    transform: scale(1.05);
+    background-color: $main-color;
+    color: $primary-bright;
+  }
 }
