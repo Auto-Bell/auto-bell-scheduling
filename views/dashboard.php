@@ -21,25 +21,20 @@
                         <i class="fas fa-search"></i>
                     </span>
                 </div>
+                
                 <div class="nav--container--right">
                     <div class="nav--container--right--icons">
                         <i class="fas fa-plus-square icons"></i>
                         <i class="fas fa-bell icons"></i>
                     </div>
-                    <div class="nav--container--right">
-                        <div class="nav--container--right--icons">
-                            <i class="fas fa-plus-square icons"></i>
-                            <i class="fas fa-bell icons"></i>
+                    <div class="nav--container--right--persona">
+                        <img src="../public/assets/avatar.png" alt="Image holder">
+                        <div class="description">
+                            <h3 class="description--name">John Doe</h3>
+                            <p class="description--position">School manager</p>
                         </div>
-                        <div class="nav--container--right--persona">
-                            <img src="../public/assets/avatar.png" alt="Image holder">
-                            <div class="description">
-                                <h3 class="description--name">John Doe</h3>
-                                <p class="description--position">School manager</p>
-                            </div>
-                            <div class="description--icon">
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
+                        <div class="description--icon">
+                            <i class="fas fa-chevron-down"></i>
                         </div>
                     </div>
                 </div>
@@ -95,14 +90,29 @@
         </div>
         
         <div class="main">
-            <!-- <h3 class="main--heading">Recent Schedules</h3>
+            <h3 class="main--heading">Recent Schedules</h3>
             <div class="main--schedules">
                 <div class="main--schedule--item">
                     <h3 class="activity">Waking Up</h3>
                     <p class="time">7:30 PM</p>
                     <span class="occurrence">Everyday</span>
                 </div>
-            </div> -->
+                <div class="main--schedule--item">
+                    <h3 class="activity">Waking Up</h3>
+                    <p class="time">7:30 PM</p>
+                    <span class="occurrence">Everyday</span>
+                </div>
+                <div class="main--schedule--item">
+                    <h3 class="activity">Waking Up</h3>
+                    <p class="time">7:30 PM</p>
+                    <span class="occurrence">Everyday</span>
+                </div>
+                <div class="main--schedule--item">
+                    <h3 class="activity">Waking Up</h3>
+                    <p class="time">7:30 PM</p>
+                    <span class="occurrence">Everyday</span>
+                </div>
+            </div>
         </div>
    </div> 
 </body>
