@@ -13,6 +13,13 @@ class DataProcessJSON{
     } 
     
     public function writeDailyScheduleToFileInJSONFormat(){
+
+        if(empty($_POST['userInput'])) {
+            echo "Data is empty";
+            header("Location: ../views/dailySchedule.php");
+            exit();
+        }
+
         if(isset($_POST['userInput'])){
             $userInput = $_POST['userInput'];
             $inputPerLine = explode("\n", $userInput);
@@ -66,6 +73,8 @@ class DataProcessJSON{
             $f = fopen($this->FILENAME, "w");
             fwrite($f, "{\n\t\"day\":\"".$this->getTimestamp(2)."\", \n\t\"data\":[\t\t".$jsonFormat."\n\t]\n}");
             fclose($f);
+            header("Location: ../views/dashboard.php");
+            exit();
         }
     }
 }

@@ -1,1 +1,1 @@
-{	"schedule":[		{			"day":"Monday",			"data":[				{"activity":"Preparing breakfast","time":"6 00 AM"},				{"activity":"Cooking super","time":"2 30 PM"}			]		},		{			"day":"Tuesday",			"data":[				{"activity":"Preparing breakfast","time":"6 00 AM"},				{"activity":"Cooking super","time":"2 30 PM"}			]		},		{			"day":"Wednesday",			"data":[				{"activity":"Cleaning the kids","time":"2 30 PM"},				{"activity":"Washing plates","time":"18 35 PM"}			]		},		{			"day":"",			"data":[			]		}	]}
+{	"schedule":[		{			"day":"",			"data":[			]		}	]}
