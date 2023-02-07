@@ -51,10 +51,10 @@
                 <div class="text">settings</div>
             </div>
             <div class="row help logout">
-                <div class="icon">
-                    <span class="material-symbols-rounded">logout</span>
+                <div class="icon logout">
+                    <span class="material-symbols-rounded logout">logout</span>
                 </div>
-                <div class="text">logout</div>
+                <div class="text logout">logout</div>
             </div>
         </div>
     </div>

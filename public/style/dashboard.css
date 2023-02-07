@@ -35,7 +35,7 @@
 }
 .container .sidebar .upper-div .row {
   height: 60px;
-  width: 80%;
+  width: 100%;
 }
 .container .sidebar .upper-div .row * {
   line-height: 60px;
@@ -68,13 +68,14 @@
 }
 .container .sidebar .lower-div .row {
   height: 60px;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
   display: flex;
   position: relative;
-  top: 60px;
+  top: 100px;
+  background-color: #ab5252;
 }
 .container .sidebar .lower-div .row * {
   line-height: 60px;
@@ -84,14 +85,11 @@
   height: 5%;
   color: #fff;
 }
+.container .sidebar .lower-div .row .icon *[class=logout] {
+  color: #f28282 !important;
+}
 .container .sidebar .lower-div .row * {
   padding: 0 10px;
-}
-.container .sidebar .lower-div .row .logout .text {
-  color: #fdc6c6 !important;
-}
-.container .sidebar .lower-div .row .logout .icon {
-  color: #fdc6c6 !important;
 }
 .container .sidebar .lower-div .row .text {
   text-transform: capitalize;
@@ -100,4 +98,11 @@
 }
 .container .sidebar .lower-div .row .FAQ {
   text-transform: uppercase;
+}
+
+.row:hover,
+.menu:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #447568;
 }/*# sourceMappingURL=dashboard.css.map */
